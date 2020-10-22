@@ -116,26 +116,26 @@ header {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
-  margin: 50px 0 ;
+  margin: 50px 0;
 }
 
 /* =============Contacts============== */
 
-.contacts{
+.contacts {
   padding: 30px 0;
   background-color: rgb(214, 214, 214);
 }
 
-.contact-block-wrp{
-    display: flex;
+.contact-block-wrp {
+  display: flex;
 }
 
-.contact-block{
-    width: 33.333%;
-    text-align: center;
+.contact-block {
+  width: 33.333%;
+  text-align: center;
 }
 
-.contact-block a{
+.contact-block a {
   font-size: 20px;
   font-weight: bold;
   display: block;
@@ -143,35 +143,34 @@ header {
   text-decoration: none;
 }
 
-.contact-block a:hover{
+.contact-block a:hover {
   color: brown;
 }
 
-
-.ms{
-    display: flex;
+.ms {
+  display: flex;
 }
 
-.ms a{  
-    transition: .2s linear all;
+.ms a {
+  transition: 0.2s linear all;
 }
-.ms img{
-    display: inline-block;
-    width: 50px;
-    margin-right: 10px;
+.ms img {
+  display: inline-block;
+  width: 50px;
+  margin-right: 10px;
 }
-.ms a:hover{
-    transform: scale(1.1);
+.ms a:hover {
+  transform: scale(1.1);
 }
 
 /* =============About US============== */
 
-.about_text img{
+.about_text img {
   float: left;
   margin-right: 20px;
 }
 
-.about_text a{
+.about_text a {
   display: block;
   border: 1px dashed gray;
   background-color: rgb(192, 190, 190);
@@ -181,7 +180,7 @@ header {
   margin-bottom: 30px;
 }
 
-.title-block_h3{
+.title-block_h3 {
   text-align: center;
   font-size: 30px;
   color: gray;
@@ -189,40 +188,40 @@ header {
   margin-bottom: 35px;
 }
 
-.employees-list{
+.employees-list {
   list-style: none;
 }
 
-.employees-list__item{
+.employees-list__item {
   margin-bottom: 40px;
 }
 
-.employees-img{
+.employees-img {
   max-width: 270px;
   height: auto;
   width: 100%;
   vertical-align: top;
 }
 
-.employees-name{
+.employees-name {
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
-.employees-info{
+.employees-info {
   display: inline-block;
   max-width: calc(100% - 275px);
   vertical-align: top;
   padding-left: 30px;
 }
 
-.emloyees-biography{
+.emloyees-biography {
   font-size: 18px;
   margin-bottom: 20px;
 }
 
-.btn-comments{
+.btn-comments {
   display: block;
   min-width: 150px;
   max-width: 180px;
@@ -235,14 +234,32 @@ header {
   font-size: 20px;
   font-weight: 700;
   border-radius: 8px;
-  transition: .4s all linear;
+  transition: 0.4s all linear;
 }
 
-.btn-comments:hover{
+.btn-comments:hover {
   color: white;
   background-color: brown;
 }
 
-
 .footer {
+  margin-bottom: 100px;
+}
+
+.block-el div {
+  background-color: lightcoral;
+  margin-bottom: 2px;
+  height: 100px;
+}
+
+
+.inline a{
+  width: 100px;
+  height: 50px;
+  background-color: lightgreen;
+}
+
+.inline-block a{
+  display: inline-block;
+  background-color: lightseagreen;
 }
