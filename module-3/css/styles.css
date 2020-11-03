@@ -3,3 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 1px solid;
+}
+.header {
+}
+.navigations {
+}
+.menu {
+  list-style: none;
+}
+.menu-item {
+}
+.menu-item-link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: brown;
+}
