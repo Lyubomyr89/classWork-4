@@ -1,32 +1,110 @@
+/* Універсальний селектор - застосовується до усіх елементів сайту */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
+/* Селектор по тегу */
+a {
+  color: green;
+  font-size: 18px;
+  text-decoration: none;
 }
 
+button {
+  width: 100px;
+  height: 60px;
+  background-color: gray;
+  border: 2px solid coral;
+}
+
+/* Селектор класу */
 .container {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
-.header {
+.top-header {
 }
 .navigations {
 }
-.menu {
+.top-menu {
   list-style: none;
 }
+
 .menu-item {
 }
+
 .menu-item-link {
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
-  color: brown;
-  
+  color: rgb(246, 13, 13);
 }
+
+/* Список студентів групи */
+.students-info {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: lightgrey;
+}
+.students-list {
+  list-style: none;
+}
+
+.students-list_item {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  background-color: transparent;
+  transition: 0.2s linear all;
+}
+
+.students-list_item:first-child {
+  border-top: 1px solid #eee;
+}
+
+.students-list_item:hover {
+  padding-left: 5px;
+  background-color: rgb(195, 195, 195);
+  /* box-shadow: 0px 10px 13px -7px #000000, 0px 2px 14px 1px rgba(0,0,0,0); */
+}
+
+.students-name {
+  display: inline-block;
+  margin-right: 26px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #222;
+  cursor: pointer;
+  transition: 0.2s linear all;
+}
+
+.send-mail {
+  float: right;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: lightskyblue;
+  color: white;
+  margin-right: 10px;
+  transition: 0.2s linear all;
+  border: 1px solid lightskyblue;
+}
+
+.send-mail:hover {
+  background-color: rgb(97, 184, 238);
+  border-color: white;
+  box-shadow: 0px 10px 13px -7px #000000, 0px 2px 14px 1px rgba(0,0,0,0);
+}
+
+.girl:hover .students-name{
+  color: orangered;
+}
+
+.boy:hover .students-name{
+  color: rgb(48, 46, 168);
+}
+
+/* Селектор ідентифікатора (селектор по ID) */

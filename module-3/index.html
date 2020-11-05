@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Git branch test</title>
+    <title>Git branch test / Технологія CSS</title>
+
+    <style>
+      header {
+        background-color: brown;
+      }
+    </style>
   </head>
   <body>
-    <header class="header">
+    <header class="top-header" style="background-color: white">
       <div class="container">
         <nav class="navigations">
-          <ul class="menu">
+          <ul class="top-menu">
             <li class="menu-item">
               <a href="#" class="menu-item-link">item1</a>
             </li>
@@ -27,10 +33,59 @@
               <a href="#" class="menu-item-link">item5</a>
             </li>
           </ul>
+          <button>Button</button>
         </nav>
       </div>
     </header>
 
-    <h1>hello world</h1>
+    <main>
+      <div class="container">
+        <h1>hello world</h1>
+
+        <div class="link-box">
+          <a href="#" class="menu-item-link">link-1</a>
+          <a href="#">link-2</a>
+          <a href="#" class="menu-item-link">link-3</a>
+          <a href="#">link-4</a>
+          <a href="#" class="menu-item-link">link-5</a>
+          <a href="#">link-6</a>
+          <button>Button</button>
+        </div>
+      </div>
+      <section class="students-info">
+        <div class="container">
+          <ul class="students-list">
+            <li class="students-list_item girl">
+              <p class="students-name">Анастасія Жадан</p>
+              <a class="send-mail" href="mailto:test@test.ua">Відправити лист</a>
+            </li>
+            <li class="students-list_item boy">
+              <p class="students-name">Ярослав Цахло</p>
+              <a class="send-mail" href="mailto:test@test.ua">Відправити лист</a>
+            </li>
+            <li class="students-list_item girl">
+              <p class="students-name">Марія Дорош</p>
+              <a class="send-mail" href="mailto:test@test.ua">Відправити лист</a>
+            </li>
+            <li class="students-list_item boy">
+              <p class="students-name">Нікіта Подгорний</p>
+              <a class="send-mail" href="mailto:test@test.ua">Відправити лист</a>
+            </li>
+            <li class="students-list_item boy">
+              <p class="students-name">Дмитро Гаранін</p>
+              <a class="send-mail" href="mailto:test@test.ua">Відправити лист</a>
+            </li>
+            <li class="students-list_item boy">
+              <p class="students-name">Ілля Боднар</p>
+              <a class="send-mail" href="mailto:test@test.ua">Відправити лист</a>
+            </li>
+            <li class="students-list_item boy">
+              <p class="students-name">Святослав Торопов</p>
+              <a class="send-mail" href="mailto:test@test.ua">Відправити лист</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
