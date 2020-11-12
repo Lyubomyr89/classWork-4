@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 18px;
+}
+
 /* Селектор по тегу */
 a {
   color: green;
@@ -96,15 +100,198 @@ button {
 .send-mail:hover {
   background-color: rgb(97, 184, 238);
   border-color: white;
-  box-shadow: 0px 10px 13px -7px #000000, 0px 2px 14px 1px rgba(0,0,0,0);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 2px 14px 1px rgba(0, 0, 0, 0);
 }
 
-.girl:hover .students-name{
+.girl:hover .students-name {
   color: orangered;
 }
 
-.boy:hover .students-name{
+.boy:hover .students-name {
   color: rgb(48, 46, 168);
 }
 
 /* Селектор ідентифікатора (селектор по ID) */
+.button-wrp {
+  text-align: center;
+}
+
+.btn {
+  border-color: rgb(124, 84, 84);
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 200px;
+  background-color: #e45d22;
+  transition: 0.2s all;
+}
+
+#sign_in:hover {
+  background-color: #db7e57;
+}
+
+#sign_out:hover {
+  background-color: #a84418;
+}
+
+/* Селектор нащадка */
+.box-t {
+  background-color: thistle;
+}
+
+.img-box {
+  height: 100px;
+}
+
+.box-t * {
+  color: #e45d22;
+  font-size: 32px;
+}
+
+.box-t .img-box {
+  background-color: rgb(161, 101, 101);
+}
+
+.button-wrp .img-box {
+  background-color: pink;
+}
+
+/* Дочірній селектор */
+
+.box-t > div {
+  border: 1px solid red;
+  margin: 5px;
+}
+
+/* Сестринський селектор */
+
+.text-block p + p {
+  background-color: yellow;
+}
+
+.text-block p + div {
+  background-color: rgb(51, 51, 17);
+}
+
+div + p {
+  color: red;
+}
+
+/* Селектор атрибуту */
+
+*[data-item="1"] {
+  background-color: springgreen;
+}
+
+a[href="mailto:test@test.ua"] {
+  font-size: 20px;
+  color: aqua;
+}
+
+/* Селектор псевдокласу */
+.link-box2 {
+  background-color: rgb(143, 139, 139);
+}
+
+.link-box2 a {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid brown;
+  transition: all 0.2s linear;
+}
+
+.box p:hover {
+  background-color: rgb(124, 84, 84);
+}
+
+.link-box2 a:hover {
+  background-color: brown;
+}
+
+.link-box2 a:visited {
+  color: blueviolet;
+}
+
+.link-box2 a:active {
+  background-color: coral;
+}
+
+.link-box2 a:focus {
+  background-color: rgb(74, 172, 17);
+}
+
+/* ===================================================== */
+/* Селектори */
+
+* {
+  /* Універсальний селектор */
+}
+
+div {
+  /* Селектор елемента */
+}
+
+.box-1 {
+  /* Селектор класу */
+}
+
+#sign_in {
+  /* Селектор ідентифікатора */
+}
+
+.box-t * {
+  /* Селектор нащадка */
+  /* Будуть вибрані всі елементи в класі .box-t */
+}
+
+.box-t .img-box {
+  /* Селектор нащадка */
+}
+
+div + p {
+  /* Сестринський селектор */
+}
+
+[data-item="1"] {
+  /* Селектор атрибуту  */
+  background-color: rgb(172, 143, 143);
+}
+
+.link-box > a {
+  /* Дочірній селектор */
+}
+
+/* ===================================================== */
+
+/*Угрупування селекторів*/
+.link-box2-text,
+.box-text2,
+#text-34 {
+  font-size: 26px;
+  background-color: yellow;
+}
+
+.box-text-3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: chartreuse;
+}
+
+.students-info div.specificity2.specificity#specificity {
+  height: 200px;
+  background-color: cornflowerblue !important;
+}
+
+.in-specificity {
+  height: 100px;
+  width: 200px;
+  background-color: cyan;
+}
+
+.in-specificity {
+  background-color: darkblue;
+}

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/styles.css"/>
     <title>Git branch test / Технологія CSS</title>
 
     <style>
@@ -18,16 +19,16 @@
         <nav class="navigations">
           <ul class="top-menu">
             <li class="menu-item">
-              <a href="#" class="menu-item-link">item1</a>
+              <a href="#sign_in" class="menu-item-link">item1</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-item-link">item2</a>
+              <a href="#" class="menu-item-link" data-item="1">item2</a>
             </li>
             <li class="menu-item">
               <a href="#" class="menu-item-link">item3</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-item-link">item4</a>
+              <a href="#" class="menu-item-link" data-item="1">item4</a>
             </li>
             <li class="menu-item">
               <a href="#" class="menu-item-link">item5</a>
@@ -42,7 +43,7 @@
       <div class="container">
         <h1>hello world</h1>
 
-        <div class="link-box">
+        <div class="link-box" data-item="1">
           <a href="#" class="menu-item-link">link-1</a>
           <a href="#">link-2</a>
           <a href="#" class="menu-item-link">link-3</a>
@@ -54,36 +55,126 @@
       </div>
       <section class="students-info">
         <div class="container">
-          <ul class="students-list">
+          <ul class="students-list" data-item="1">
             <li class="students-list_item girl">
               <p class="students-name">Анастасія Жадан</p>
-              <a class="send-mail" href="mailto:test@test.ua">Відправити лист</a>
+              <a class="send-mail" href="mailto:test@test.ua"
+                >Відправити лист</a
+              >
             </li>
             <li class="students-list_item boy">
               <p class="students-name">Ярослав Цахло</p>
-              <a class="send-mail" href="mailto:test@test.ua">Відправити лист</a>
+              <a class="send-mail" href="mailto:test@test.ua"
+                >Відправити лист</a
+              >
             </li>
-            <li class="students-list_item girl">
+            <li class="students-list_item girl" data-item="1">
               <p class="students-name">Марія Дорош</p>
-              <a class="send-mail" href="mailto:test@test.ua">Відправити лист</a>
+              <a class="send-mail" href="mailto:test@test.ua"
+                >Відправити лист</a
+              >
             </li>
             <li class="students-list_item boy">
               <p class="students-name">Нікіта Подгорний</p>
-              <a class="send-mail" href="mailto:test@test.ua">Відправити лист</a>
+              <a class="send-mail" href="mailto:test@test.ua"
+                >Відправити лист</a
+              >
             </li>
             <li class="students-list_item boy">
               <p class="students-name">Дмитро Гаранін</p>
-              <a class="send-mail" href="mailto:test@test.ua">Відправити лист</a>
+              <a class="send-mail" href="mailto:test@test.ua"
+                >Відправити лист</a
+              >
             </li>
             <li class="students-list_item boy">
               <p class="students-name">Ілля Боднар</p>
-              <a class="send-mail" href="mailto:test@test.ua">Відправити лист</a>
+              <a class="send-mail" href="mailto:test@test.ua"
+                >Відправити лист</a
+              >
             </li>
             <li class="students-list_item boy">
               <p class="students-name">Святослав Торопов</p>
-              <a class="send-mail" href="mailto:test@test.ua">Відправити лист</a>
+              <a class="send-mail" href="mailto:test@test.ua"
+                >Відправити лист</a
+              >
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="students-info">
+        <div class="container">
+          <div class="button-wrp">
+            <button class="btn" id="sign_in">увійти</button>
+            <button class="btn" id="sign_out">вийти</button>
+            <div class="img-box" data-item="1"></div>
+          </div>
+
+          <div class="box-t">
+            <div class="box-inner-t">
+              <div class="img-box"></div>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <div class="info-block"></div>
+            </div>
+            <div class="box-inner-t">
+              <div class="img-box"></div>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="box-inner-t">
+              <div class="img-box"></div>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <div class="info-block"></div>
+            </div>
+            <div>test</div>
+            <div>test2</div>
+          </div>
+
+          <div class="text-block">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div>div</div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div>div</div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="box">
+            <div class="box-1">div</div>
+            <div class="box-1" data-item="1">div</div>
+            <div class="box-1">div</div>
+            <p>test - 1</p>
+            <p>test - 1</p>
+            <div class="box-1">div</div>
+            <div class="box-1">div</div>
+            <p>test - 1</p>
+            <p id="text-34">test - 1</p>
+            <p class="box-text2">test - 1</p>
+          </div>
+
+          <div class="link-box2">
+            <a href="#1">item-1</a>
+            <a href="#2">item-2</a>
+            <a href="#3">item-3</a>
+            <a href="#4">item-4</a>
+            <a href="#5">item-5</a>
+            <p class="link-box2-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              laborum ex veritatis sit eum animi, praesentium in, saepe
+              dignissimos, perferendis architecto? Vero corporis ipsum culpa
+              eius sequi, magnam pariatur quasi?
+            </p>
+          </div>
+
+          <div class="box-text-3">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#">Lorem, ipsum dolor.</a>
+            <button>Lorem, ipsum.</button>
+          </div>
+
+          <div class="specificity specificity2" id="specificity">
+            <div class="in-specificity"></div>
+          </div>
         </div>
       </section>
     </main>
