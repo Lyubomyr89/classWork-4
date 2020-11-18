@@ -295,3 +295,84 @@ div + p {
 .in-specificity {
   background-color: darkblue;
 }
+
+[data-item="1"] {
+  /* Селектор по атрибуту */
+}
+
+p + a {
+  /* Сестринський селектор */
+}
+
+.students-info {
+  /* Селектор класу */
+}
+
+.box-t p {
+  /* Селектор нащадка */
+}
+
+.box-t > div {
+  /* Дочірній селектор */
+}
+
+#box {
+  /* Селектор ідентифікатора */
+}
+
+* {
+  /* Універсальний селектор */
+}
+
+div {
+  /* Селектор елемента */
+}
+
+.btn:hover {
+  /* Селектор псевдокласу */
+}
+
+/* Модель візуального форматування */
+
+.title {
+  text-align: center;
+  background-color: brown;
+}
+
+.box-mr {
+  background-color: #ccc;
+}
+
+.box-mr div {
+  width: 300px;
+  height: 200px;
+  border: 1px solid blue;
+  margin: 20px;
+  padding: 15px;
+  background-color: rgb(129, 124, 124);
+}
+
+.box-mr div:first-child {
+  margin-right: auto;
+}
+
+.box-mr div:last-child {
+  margin-top: 30px;
+  margin-left: auto;
+}
+
+
+
+.box-sizing div {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border: 10px solid red;
+  background-color: coral;
+  box-sizing: content-box;
+  margin-bottom: 5px;
+}
+
+.box-sizing div:last-child {
+  box-sizing: border-box;
+}
