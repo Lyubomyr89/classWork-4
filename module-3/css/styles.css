@@ -12,7 +12,6 @@ body {
 /* Селектор по тегу */
 a {
   color: green;
-  font-size: 18px;
   text-decoration: none;
 }
 
@@ -361,8 +360,6 @@ div {
   margin-left: auto;
 }
 
-
-
 .box-sizing div {
   width: 200px;
   height: 200px;
@@ -375,4 +372,58 @@ div {
 
 .box-sizing div:last-child {
   box-sizing: border-box;
+}
+
+/*Блокові та рядкові елементи*/
+
+.block-el .container {
+  border: coral 2px solid;
+}
+.block-el .block {
+  border: 2px solid red;
+}
+.block-el .block div {
+  display: block;
+  width: 300px;
+  height: 40px;
+  background-color: darkblue;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto 10px;
+}
+
+/* рядкові елементи */
+.block-el .inline {
+  border: 2px solid rgb(7, 97, 59);
+}
+
+.inline {
+  font-size: 0;
+}
+.inline a {
+  width: 300px;
+  height: 50px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  background-color: darkcyan;
+  padding: 0 10px;
+  margin: 10px;
+}
+
+/* Рядково-блокові елементи */
+.inline-block {
+  font-size: 0;
+  border: 2px solid rgb(6, 4, 72);
+}
+.inline-block a {
+  display: inline-block;
+  width: 300px;
+  height: 50px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  background-color: rgb(5, 105, 92);
+  padding: 10px;
+  /* margin: 10px; */
 }
