@@ -24,10 +24,10 @@ button {
 
 /* Селектор класу */
 .container {
-  max-width: 1140px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 15px;
-  /* border: 1px solid; */
+  border: 3px solid red;
 }
 .top-header {
 }
@@ -376,6 +376,10 @@ div {
 
 /*Блокові та рядкові елементи*/
 
+.block {
+  margin-bottom: 20px;
+}
+
 .block-el .container {
   border: coral 2px solid;
 }
@@ -399,6 +403,7 @@ div {
 
 .inline {
   font-size: 0;
+  margin-bottom: 20px;
 }
 .inline a {
   width: 300px;
@@ -415,6 +420,7 @@ div {
 .inline-block {
   font-size: 0;
   border: 2px solid rgb(6, 4, 72);
+  margin-bottom: 20px;
 }
 .inline-block a {
   display: inline-block;
@@ -426,4 +432,102 @@ div {
   background-color: rgb(5, 105, 92);
   padding: 10px;
   /* margin: 10px; */
+}
+
+/* Вирівнювання контенту */
+
+/* Горизонтальне тексту, рядкових та рядково-блочних елементів*/
+.text-al {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(226, 224, 226);
+
+  text-align: center;
+  text-align: left;
+  text-align: right;
+  text-align: justify;
+  text-align: inherit;
+  text-align: initial;
+}
+
+.text-al span {
+  background-color: #cff;
+  padding: 0 10px;
+}
+.text-al span:nth-child(2) {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.text-al-2 span {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+}
+
+.text-al-2 span:first-child {
+  height: 60px;
+}
+
+.text-al-2 span:nth-child(2) {
+  font-size: 16px;
+}
+
+.text-al-2 span:last-child {
+  height: 40px;
+}
+
+/* Вертикальне */
+.text-al-2 span {
+  vertical-align: top;
+  vertical-align: super;
+  vertical-align: sub;
+  vertical-align: bottom;
+  vertical-align: middle;
+}
+
+.text-al-2 span:nth-child(2) {
+  /* vertical-align: sub; */
+}
+
+/* Горизонтальне блочного елемента з обм. */
+.box-al-block {
+  display: block;
+  height: 100px;
+  max-width: 300px;
+  background-color: rgb(231, 75, 13);
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.left {
+  margin-right: auto;
+}
+.center {
+  /* margin: 0 auto; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.right {
+  margin-left: auto;
+}
+
+.wrp-box {
+  background-color: rgb(252, 248, 2);
+}
+
+/* Оформлення тексту */
+.text-al-3 {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Verdana", sans-serif;
+  text-decoration: line-through;
+  color: #db0be8;
+  line-height: 22px;
+  text-indent: 50px;
 }
