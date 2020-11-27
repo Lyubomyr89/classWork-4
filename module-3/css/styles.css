@@ -529,5 +529,6 @@ div {
   text-decoration: line-through;
   color: #db0be8;
   line-height: 22px;
+  line-height: 1.5;
   text-indent: 50px;
 }
