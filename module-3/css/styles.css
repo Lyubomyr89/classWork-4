@@ -1,3 +1,6 @@
+
+
+
 /* Універсальний селектор - застосовується до усіх елементів сайту */
 * {
   margin: 0;
@@ -5,11 +8,11 @@
   box-sizing: border-box;
 }
 
+/* Селектор елемента */
 body {
   font-size: 18px;
 }
 
-/* Селектор по тегу */
 a {
   color: green;
   text-decoration: none;
@@ -29,10 +32,7 @@ button {
   padding: 0 15px;
   border: 3px solid red;
 }
-.top-header {
-}
-.navigations {
-}
+
 .top-menu {
   list-style: none;
 }
@@ -110,7 +110,6 @@ button {
   color: rgb(48, 46, 168);
 }
 
-/* Селектор ідентифікатора (селектор по ID) */
 .button-wrp {
   text-align: center;
 }
@@ -127,6 +126,8 @@ button {
   transition: 0.2s all;
 }
 
+
+/* Селектор ідентифікатора (селектор по ID) */
 #sign_in:hover {
   background-color: #db7e57;
 }
@@ -134,6 +135,7 @@ button {
 #sign_out:hover {
   background-color: #a84418;
 }
+
 
 /* Селектор нащадка */
 .box-t {
@@ -180,7 +182,7 @@ div + p {
 
 /* Селектор атрибуту */
 
-*[data-item="1"] {
+[data-item="1"] {
   background-color: springgreen;
 }
 
@@ -189,7 +191,6 @@ a[href="mailto:test@test.ua"] {
   color: aqua;
 }
 
-/* Селектор псевдокласу */
 .link-box2 {
   background-color: rgb(143, 139, 139);
 }
@@ -202,6 +203,8 @@ a[href="mailto:test@test.ua"] {
   border: 1px solid brown;
   transition: all 0.2s linear;
 }
+
+/* Селектор псевдокласу */
 
 .box p:hover {
   background-color: rgb(124, 84, 84);

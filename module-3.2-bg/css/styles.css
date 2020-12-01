@@ -1,0 +1,60 @@
+/* Універсальний селектор - застосовується до усіх елементів сайту */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+/* Селектор по тегу */
+a {
+  text-decoration: none;
+}
+
+/* Селектор класу */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  margin: 0 0 26px 0;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.header {
+  padding-top: 50px;
+  min-height: 100vh;
+  max-width: 100vw;
+  background-color: violet;
+
+  background-image: url(../images/christmas.png), url(../images/bg-header.jpg);
+  
+  background-size: 100%;
+  background-size: contain;
+  background-size: 200px;
+  background-size: 300px, cover, cover; 
+  
+  background-repeat: repeat;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+
+  background-position: left center;
+  background-position: left bottom;
+  background-position: right bottom;
+  background-position: 200px 200px;
+  background-position: center bottom, center center;
+}
