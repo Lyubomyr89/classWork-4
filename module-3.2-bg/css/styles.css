@@ -42,14 +42,16 @@ a {
   background-color: rgb(9, 61, 3);
 
   /* дозволяє вказати фону зображення по url */
-  background-image: url(../images/christmas.png), url(../images/bg-header.jpg);
+  background-image: url(../images/christmas.png), 
+                    url(../images/christmas.png), 
+                    url(../images/bg-header.jpg);
   
   /* визначає розміри фонового зображення в контейнері, використовує абсолютні (px), 
      відносні одиниці(%) і ключові слова (cover, contain). */
   background-size: 100%;
   background-size: contain;
   background-size: 200px;
-  background-size: 300px, cover, cover; 
+  background-size: 300px, 200px, cover, cover; 
   
 
   /* Усталено заповнює фон копіями background-image. 
@@ -64,5 +66,40 @@ a {
   background-position: left bottom;
   background-position: right bottom;
   background-position: 200px 200px;
-  background-position: center bottom, center center;
+  background-position: center bottom, 10% bottom, center center;
+
+  /* background: url(../images/christmas.png) no-repeat center bottom,
+              url(../images/christmas.png) no-repeat 10% bottom,
+              url(../images/bg-header.jpg) rgb(9, 61, 3) no-repeat center;
+              background-size: 300px, 200px, cover; */
+}
+
+.bg-box{
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin: 30px auto;
+  border: 10px dashed greenyellow;
+  background-color: yellow;
+  background-clip: border-box;
+  background-clip: padding-box;
+  background-clip: content-box;
+}
+
+.bg-box__inner{
+  font-size: 32px;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto  ;
+  background-color: rgb(67, 94, 247);
+  background-color: rgba(67, 94, 247, .5);
+  background-color: #d31515;
+  /* opacity: .5; */
+}
+
+.gradient{
+  height: 100vh;
+  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+  background: radial-gradient(ellipse at center, #FFE53B, #FF2525) no-repeat center,
+                    linear-gradient(45deg, #d31515 10%, #18c2c2 45%, yellow);
 }
